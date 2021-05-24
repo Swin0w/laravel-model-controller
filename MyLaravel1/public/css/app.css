@@ -1,0 +1,25 @@
+body {
+  background-color: #000;
+}
+
+h1 {
+  color: red;
+}
+
+h3 {
+  color: red;
+}
+
+h3,
+p {
+  display: inline-block;
+}
+
+li {
+  list-style: none;
+}
+
+li a {
+  color: white;
+}
+
