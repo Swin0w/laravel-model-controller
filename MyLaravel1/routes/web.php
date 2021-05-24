@@ -15,3 +15,5 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'TestController@home')
     ->name('home');
+Route::get('/films/{id}', 'TestController@film')
+    ->name('films');

@@ -12,4 +12,10 @@ class TestController extends Controller
         $movies = Movies::all();
         return view('pages.home', compact('movies'));
     }
+
+    public function film($id) {
+        $film = Movies::all();
+        $film = Movies::findOrFail($id);
+        return view('pages.film', compact('film'));
+    }
 }

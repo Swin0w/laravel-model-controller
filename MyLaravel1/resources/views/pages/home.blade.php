@@ -4,9 +4,9 @@
     <ul>
         @foreach ($movies as $movie)
         <li>
-            <h3>Titolo: </h3>
-            <a href="">
-                <p>{{ $movie -> title}}</p>
+            <h3>{{ $movie -> id}} Titolo: </h3>
+            <a href="{{ route('films', $movie -> id) }}">
+                <p> {{ $movie -> title}}</p>
             </a>
         </li>
     @endforeach
